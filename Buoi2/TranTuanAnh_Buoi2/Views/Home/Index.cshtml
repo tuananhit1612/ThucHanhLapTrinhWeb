@@ -1,0 +1,67 @@
+﻿@model IEnumerable<TranTuanAnh_Buoi2.Models.Product>
+
+@{
+    ViewData["Title"] = "Sản phẩm";
+    var selectedCategory = Context.Request.Query["d"].ToString();
+}
+
+<div class="container mt-5">
+    <h2 class="text-center mb-4">Sản phẩm mới nhất</h2>
+    <div class="row">
+        <div class="col-md-12 text-right mb-4">
+            <form method="get" asp-action="Index" class="d-inline">
+                <select name="d" class="form-select w-auto d-inline" onchange="this.form.submit()">
+                    <option value="">Tất cả danh mục</option>
+                    @foreach (var category in ViewBag.Categories)
+                    {
+                        if (selectedCategory == category.Id.ToString())
+                        {
+                            <option value="@category.Id" selected>@category.Name</option>
+                        }
+                        else
+                        {
+                            <option value="@category.Id">@category.Name</option>
+                        }
+                    }
+                </select>
+
+        </form>
+
+     </div>
+    <div class="row">
+        @foreach (var product in Model)
+        {
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 shadow-sm">
+                    @if (!string.IsNullOrEmpty(product.ImageUrl))
+                    {
+                        <img src="@product.ImageUrl" class="card-img-top" alt="@product.Name" style="height:220px;object-fit:contain;">
+                    }
+                    else
+                    {
+                        <div class="bg-light d-flex align-items-center justify-content-center" style="height:220px;">
+                            <span class="text-muted">No image</span>
+                        </div>
+                    }
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">@product.Name</h5>
+                        <h6 class="card-subtitle mb-2 text-primary">@product.Price.ToString("N0") ₫</h6>
+                        <p class="card-text flex-grow-1">@product.Description</p>
+                            <form asp-controller="Product" asp-action="Display" asp-route-id="@product.Id">
+                                <input type="hidden" name="productId" value="@product.Id" />
+                                <button type="submit" class="btn btn-primary w-100 mt-auto">
+                                    <i class="bi bi-cart-plus"></i> Chi Tiết
+                                </button>
+                            </form>
+                        <form method="post" asp-controller="" asp-action="">
+                            <input type="hidden" name="productId" value="@product.Id" />
+                            <button type="submit" class="btn btn-success w-100 mt-auto">
+                                <i class="bi bi-cart-plus"></i> Thêm vào giỏ hàng
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>

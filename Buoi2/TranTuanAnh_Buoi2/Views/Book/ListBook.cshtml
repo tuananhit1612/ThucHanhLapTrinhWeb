@@ -1,0 +1,20 @@
+﻿<p>Họ tên: <b>Trần Tuấn Anh</b></p>
+<p>MSSV: <b>2280600132</b></p>
+<div>
+    <ul>
+        <!-- Viết code html để hiển thị ra danh sách sách -->
+        <!-- Dựa vào giá trị nằm trong ViewBag.dsSach-->
+        @{
+            //khai báo biến i
+            int i = 1;
+        }
+        <!-- Quét từng phần tử trong mảng ViewBag.Books và gán vào biến item-->
+        @foreach (var item in ViewBag.dsSach)
+        {
+            <li>
+                @i - <b>ID: @item.id</b> Tựa đề : @item.title & Tác giả: @item.author
+            </li>
+            i++;
+        }
+    </ul>
+</div>

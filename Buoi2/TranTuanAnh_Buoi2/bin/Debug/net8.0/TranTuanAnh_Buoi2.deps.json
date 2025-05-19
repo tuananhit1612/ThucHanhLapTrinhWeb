@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "TranTuanAnh_Buoi2/1.0.0": {
+        "runtime": {
+          "TranTuanAnh_Buoi2.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "TranTuanAnh_Buoi2/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

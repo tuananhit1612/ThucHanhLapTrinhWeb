@@ -1,0 +1,97 @@
+is_global = true
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = TranTuanAnh_Buoi2
+build_property.RootNamespace = TranTuanAnh_Buoi2
+build_property.ProjectDir = D:\Dev\Learning\LapTrinhWeb_Hutech\ThucHanhLapTrinhWeb\Buoi2\TranTuanAnh_Buoi2\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = D:\Dev\Learning\LapTrinhWeb_Hutech\ThucHanhLapTrinhWeb\Buoi2\TranTuanAnh_Buoi2
+build_property._RazorSourceGeneratorDebug = 
+build_property.EffectiveAnalysisLevelStyle = 8.0
+build_property.EnableCodeStyleSeverity = 
+
+[D:/Dev/Learning/LapTrinhWeb_Hutech/ThucHanhLapTrinhWeb/Buoi2/TranTuanAnh_Buoi2/Views/Book/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Dev/Learning/LapTrinhWeb_Hutech/ThucHanhLapTrinhWeb/Buoi2/TranTuanAnh_Buoi2/Views/Book/ListBook.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va1xMaXN0Qm9vay5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Dev/Learning/LapTrinhWeb_Hutech/ThucHanhLapTrinhWeb/Buoi2/TranTuanAnh_Buoi2/Views/Category/Add.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcnlcQWRkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Dev/Learning/LapTrinhWeb_Hutech/ThucHanhLapTrinhWeb/Buoi2/TranTuanAnh_Buoi2/Views/Category/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcnlcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Dev/Learning/LapTrinhWeb_Hutech/ThucHanhLapTrinhWeb/Buoi2/TranTuanAnh_Buoi2/Views/Category/Display.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcnlcRGlzcGxheS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Dev/Learning/LapTrinhWeb_Hutech/ThucHanhLapTrinhWeb/Buoi2/TranTuanAnh_Buoi2/Views/Category/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcnlcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Dev/Learning/LapTrinhWeb_Hutech/ThucHanhLapTrinhWeb/Buoi2/TranTuanAnh_Buoi2/Views/Category/Update.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcnlcVXBkYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Dev/Learning/LapTrinhWeb_Hutech/ThucHanhLapTrinhWeb/Buoi2/TranTuanAnh_Buoi2/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Dev/Learning/LapTrinhWeb_Hutech/ThucHanhLapTrinhWeb/Buoi2/TranTuanAnh_Buoi2/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Dev/Learning/LapTrinhWeb_Hutech/ThucHanhLapTrinhWeb/Buoi2/TranTuanAnh_Buoi2/Views/Product/Add.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxBZGQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Dev/Learning/LapTrinhWeb_Hutech/ThucHanhLapTrinhWeb/Buoi2/TranTuanAnh_Buoi2/Views/Product/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Dev/Learning/LapTrinhWeb_Hutech/ThucHanhLapTrinhWeb/Buoi2/TranTuanAnh_Buoi2/Views/Product/Display.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxEaXNwbGF5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Dev/Learning/LapTrinhWeb_Hutech/ThucHanhLapTrinhWeb/Buoi2/TranTuanAnh_Buoi2/Views/Product/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Dev/Learning/LapTrinhWeb_Hutech/ThucHanhLapTrinhWeb/Buoi2/TranTuanAnh_Buoi2/Views/Product/Update.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxVcGRhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Dev/Learning/LapTrinhWeb_Hutech/ThucHanhLapTrinhWeb/Buoi2/TranTuanAnh_Buoi2/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Dev/Learning/LapTrinhWeb_Hutech/ThucHanhLapTrinhWeb/Buoi2/TranTuanAnh_Buoi2/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Dev/Learning/LapTrinhWeb_Hutech/ThucHanhLapTrinhWeb/Buoi2/TranTuanAnh_Buoi2/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Dev/Learning/LapTrinhWeb_Hutech/ThucHanhLapTrinhWeb/Buoi2/TranTuanAnh_Buoi2/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Dev/Learning/LapTrinhWeb_Hutech/ThucHanhLapTrinhWeb/Buoi2/TranTuanAnh_Buoi2/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-gz52qyxbq6

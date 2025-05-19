@@ -1,0 +1,56 @@
+﻿@model TranTuanAnh_Buoi2.Models.Product
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card shadow">
+                <div class="card-header bg-warning text-dark">
+                    <h3 class="mb-0">Edit Product</h3>
+                </div>
+                <div class="card-body">
+                    <form asp-action="Update" enctype="multipart/form-data">
+                        <input type="hidden" asp-for="Id" />
+                        <div class="form-group mb-3">
+                            <label asp-for="Name" class="form-label"></label>
+                            <input asp-for="Name" class="form-control" />
+                            <span asp-validation-for="Name" class="text-danger"></span>
+                        </div>
+                        <div class="form-group mb-3">
+                            <label asp-for="Price" class="form-label"></label>
+                            <input asp-for="Price" class="form-control" />
+                            <span asp-validation-for="Price" class="text-danger"></span>
+                        </div>
+                        <div class="form-group mb-3">
+                            <label asp-for="Description" class="form-label"></label>
+                            <textarea asp-for="Description" class="form-control"></textarea>
+                            <span asp-validation-for="Description" class="text-danger"></span>
+                        </div>
+                        <div class="form-group mb-3">
+                            <label asp-for="ImageUrl" class="form-label">Image</label>
+                            <input type="file" name="imageUrl" class="form-control" />
+                            @if (!string.IsNullOrEmpty(Model.ImageUrl))
+                            {
+                                <div class="mt-2">
+                                    <img src="@Model.ImageUrl" class="img-thumbnail" style="width:100px" />
+                                </div>
+                            }
+                        </div>
+                        <div class="form-group mb-4">
+                            <label class="form-label">Other Images</label>
+                            <input type="file" name="imageUrls" class="form-control" multiple />
+                            @if (Model.ImageUrls != null)
+                            {
+                                <div class="d-flex flex-wrap gap-2 mt-2">
+                                    @foreach (var img in Model.ImageUrls)
+                                    {
+                                        <img src="@img" class="img-thumbnail" style="width:100px" />
+                                    }
+                                </div>
+                            }
+                        </div>
+                        <button type="submit" class="btn btn-warning w-100">Update</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

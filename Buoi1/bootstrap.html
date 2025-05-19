@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>D8-Shop</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        .sidebar-left {
+            position: sticky;
+            top: 50%;
+            transform: translateY(-50%);
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .sidebar-left ul {
+            list-style-type: none;
+        }
+        .sidebar-left a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .product-card img {
+            max-width: 100%;
+            border-radius: 8px;
+        }
+
+        .product-card {
+            background: #fff;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+            height: 100%;
+            text-align: center;
+        }
+
+        footer {
+            background-color: #f25e02;
+            color: white;
+            padding: 40px 20px;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        header,
+        nav {
+            background-color: #f25e02;
+            color: white;
+        }
+
+        .title {
+            color: #f25e02;
+            text-align: center;
+            margin: 30px 0 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="py-3 text-center">
+        <h1>Trang Web Công Nghệ Top 1 Việt Nam</h1>
+    </header>
+
+    <nav class="navbar navbar-expand-lg navbar-dark px-3">
+        <div class="container-fluid justify-content-center">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link active" href="#">Trang Chủ</a></li>
+                <li class="nav-item"><a class="nav-link" href="#may-tinh">Sản Phẩm</a></li>
+                <li class="nav-item"><a class="nav-link" href="#dien-thoai">Liên Hệ</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container-fluid my-4">
+        <div class="row">
+            <!-- Sidebar -->
+            <div class="col-lg-3 mb-4">
+                <div class="sidebar-left">
+                    <h4>Danh Mục</h4>
+                    <ul class="list-unstyled">
+                        <li><a href="#may-tinh">Máy Tính</a></li>
+                        <li><a href="#dien-thoai">Điện Thoại</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Main Content -->
+            <div class="col-lg-9">
+                <!-- Máy Tính -->
+                <h2 id="may-tinh" class="title">Máy Tính</h2>
+                <div class="row g-4">
+                    <!-- Repeat sản phẩm -->
+                    <div class="col-md-4">
+                        <div class="product-card">
+                            <img src="https://pcmarket.vn/media/product/10239_340784857_799984757660921_1932046047919300131_n.jpg"
+                                alt="">
+                            <h5>PC Văn Phòng</h5>
+                            <p>Hiệu năng ổn định cho công việc</p>
+                            <p class="fw-bold text-success">8.000.000 VNĐ</p>
+                            <button class="btn btn-warning">Mua ngay</button>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="product-card">
+                            <img src="https://pcmarket.vn/media/product/10239_340784857_799984757660921_1932046047919300131_n.jpg" alt="">
+                            <h5>PC Văn Phòng</h5>
+                            <p>Hiệu năng ổn định cho công việc</p>
+                            <p class="fw-bold text-success">8.000.000 VNĐ</p>
+                            <button class="btn btn-warning">Mua ngay</button>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="product-card">
+                            <img src="https://pcmarket.vn/media/product/10239_340784857_799984757660921_1932046047919300131_n.jpg" alt="">
+                            <h5>PC Văn Phòng</h5>
+                            <p>Hiệu năng ổn định cho công việc</p>
+                            <p class="fw-bold text-success">8.000.000 VNĐ</p>
+                            <button class="btn btn-warning">Mua ngay</button>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="product-card">
+                            <img src="https://pcmarket.vn/media/product/10239_340784857_799984757660921_1932046047919300131_n.jpg" alt="">
+                            <h5>PC Văn Phòng</h5>
+                            <p>Hiệu năng ổn định cho công việc</p>
+                            <p class="fw-bold text-success">8.000.000 VNĐ</p>
+                            <button class="btn btn-warning">Mua ngay</button>
+                        </div>
+                    </div>
+                    <!-- Nhân bản nhiều sản phẩm -->
+                    <div class="col-md-4">
+                        <div class="product-card">
+                            <img src="https://pcmarket.vn/media/product/10239_340784857_799984757660921_1932046047919300131_n.jpg"
+                                alt="">
+                            <h5>PC Gaming</h5>
+                            <p>Cấu hình cao, chơi game mượt</p>
+                            <p class="fw-bold text-success">20.000.000 VNĐ</p>
+                            <button class="btn btn-warning">Mua ngay</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Điện Thoại -->
+                <h2 id="dien-thoai" class="title">Điện Thoại</h2>
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <div class="product-card">
+                            <img src="https://cdn.tgdd.vn/Products/Images/42/213031/iphone-12-1-2-750x500.jpg" alt="">
+                            <h5>iPhone 15</h5>
+                            <p>Thiết kế sang trọng, hiệu năng mạnh</p>
+                            <p class="fw-bold text-success">30.000.000 VNĐ</p>
+                            <button class="btn btn-warning">Mua ngay</button>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="product-card">
+                            <img src="https://cdn.tgdd.vn/Products/Images/42/213031/iphone-12-1-2-750x500.jpg" alt="">
+                            <h5>iPhone 15</h5>
+                            <p>Thiết kế sang trọng, hiệu năng mạnh</p>
+                            <p class="fw-bold text-success">30.000.000 VNĐ</p>
+                            <button class="btn btn-warning">Mua ngay</button>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="product-card">
+                            <img src="https://cdn.tgdd.vn/Products/Images/42/213031/iphone-12-1-2-750x500.jpg" alt="">
+                            <h5>iPhone 15</h5>
+                            <p>Thiết kế sang trọng, hiệu năng mạnh</p>
+                            <p class="fw-bold text-success">30.000.000 VNĐ</p>
+                            <button class="btn btn-warning">Mua ngay</button>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="product-card">
+                            <img src="https://cdn.tgdd.vn/Products/Images/42/213031/iphone-12-1-2-750x500.jpg" alt="">
+                            <h5>iPhone 15</h5>
+                            <p>Thiết kế sang trọng, hiệu năng mạnh</p>
+                            <p class="fw-bold text-success">30.000.000 VNĐ</p>
+                            <button class="btn btn-warning">Mua ngay</button>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="product-card">
+                            <img src="https://cdn.tgdd.vn/Products/Images/42/213031/iphone-12-1-2-750x500.jpg" alt="">
+                            <h5>iPhone 15</h5>
+                            <p>Thiết kế sang trọng, hiệu năng mạnh</p>
+                            <p class="fw-bold text-success">30.000.000 VNĐ</p>
+                            <button class="btn btn-warning">Mua ngay</button>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="product-card">
+                            <img src="https://cdn.tgdd.vn/Products/Images/42/213031/iphone-12-1-2-750x500.jpg" alt="">
+                            <h5>iPhone 15</h5>
+                            <p>Thiết kế sang trọng, hiệu năng mạnh</p>
+                            <p class="fw-bold text-success">30.000.000 VNĐ</p>
+                            <button class="btn btn-warning">Mua ngay</button>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="product-card">
+                            <img src="https://cdn.tgdd.vn/Products/Images/42/213031/iphone-12-1-2-750x500.jpg" alt="">
+                            <h5>Samsung Galaxy A</h5>
+                            <p>Giá hợp lý, pin trâu</p>
+                            <p class="fw-bold text-success">6.000.000 VNĐ</p>
+                            <button class="btn btn-warning">Mua ngay</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="text-white">
+        <div class="container">
+            <div class="row text-start">
+                <div class="col-md-4 mb-4">
+                    <h5>Liên hệ</h5>
+                    <p>Email: tuananh161224@gmail.com</p>
+                    <p>Điện thoại: 0123456789</p>
+                    <p>Địa chỉ: 123 Đường ABC, Quận 1, TP.HCM</p>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h5>Bản quyền</h5>
+                    <p>&copy; 2023 D8-Shop. All rights reserved.</p>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h5>Mạng xã hội</h5>
+                    <p><i class="fab fa-facebook-f"></i> Facebook</p>
+                    <p><i class="fab fa-twitter"></i> Twitter</p>
+                    <p><i class="fab fa-instagram"></i> Instagram</p>
+                    <p><i class="fab fa-linkedin-in"></i> LinkedIn</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

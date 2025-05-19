@@ -1,0 +1,121 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Dev\\Learning\\LapTrinhWeb_Hutech\\ThucHanhLapTrinhWeb\\Buoi2\\TranTuanAnh_Buoi2\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{54F3F9D7-12FF-4E44-8061-DE7EC08AFA17}|TranTuanAnh_Buoi2.csproj|d:\\dev\\learning\\laptrinhweb_hutech\\thuchanhlaptrinhweb\\buoi2\\trantuananh_buoi2\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54F3F9D7-12FF-4E44-8061-DE7EC08AFA17}|TranTuanAnh_Buoi2.csproj|solutionrelative:controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{54F3F9D7-12FF-4E44-8061-DE7EC08AFA17}|TranTuanAnh_Buoi2.csproj|d:\\dev\\learning\\laptrinhweb_hutech\\thuchanhlaptrinhweb\\buoi2\\trantuananh_buoi2\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54F3F9D7-12FF-4E44-8061-DE7EC08AFA17}|TranTuanAnh_Buoi2.csproj|solutionrelative:models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{54F3F9D7-12FF-4E44-8061-DE7EC08AFA17}|TranTuanAnh_Buoi2.csproj|d:\\dev\\learning\\laptrinhweb_hutech\\thuchanhlaptrinhweb\\buoi2\\trantuananh_buoi2\\views\\product\\update.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{54F3F9D7-12FF-4E44-8061-DE7EC08AFA17}|TranTuanAnh_Buoi2.csproj|solutionrelative:views\\product\\update.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{54F3F9D7-12FF-4E44-8061-DE7EC08AFA17}|TranTuanAnh_Buoi2.csproj|d:\\dev\\learning\\laptrinhweb_hutech\\thuchanhlaptrinhweb\\buoi2\\trantuananh_buoi2\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{54F3F9D7-12FF-4E44-8061-DE7EC08AFA17}|TranTuanAnh_Buoi2.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{54F3F9D7-12FF-4E44-8061-DE7EC08AFA17}|TranTuanAnh_Buoi2.csproj|d:\\dev\\learning\\laptrinhweb_hutech\\thuchanhlaptrinhweb\\buoi2\\trantuananh_buoi2\\views\\product\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{54F3F9D7-12FF-4E44-8061-DE7EC08AFA17}|TranTuanAnh_Buoi2.csproj|solutionrelative:views\\product\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Product.cs",
+              "DocumentMoniker": "D:\\Dev\\Learning\\LapTrinhWeb_Hutech\\ThucHanhLapTrinhWeb\\Buoi2\\TranTuanAnh_Buoi2\\Models\\Product.cs",
+              "RelativeDocumentMoniker": "Models\\Product.cs",
+              "ToolTip": "D:\\Dev\\Learning\\LapTrinhWeb_Hutech\\ThucHanhLapTrinhWeb\\Buoi2\\TranTuanAnh_Buoi2\\Models\\Product.cs",
+              "RelativeToolTip": "Models\\Product.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAAwA4AAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-19T04:02:26.971Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ProductController.cs",
+              "DocumentMoniker": "D:\\Dev\\Learning\\LapTrinhWeb_Hutech\\ThucHanhLapTrinhWeb\\Buoi2\\TranTuanAnh_Buoi2\\Controllers\\ProductController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ProductController.cs",
+              "ToolTip": "D:\\Dev\\Learning\\LapTrinhWeb_Hutech\\ThucHanhLapTrinhWeb\\Buoi2\\TranTuanAnh_Buoi2\\Controllers\\ProductController.cs",
+              "RelativeToolTip": "Controllers\\ProductController.cs",
+              "ViewState": "AgIAAHYAAAAAAAAAAAAewGwAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-19T04:01:43.244Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Update.cshtml",
+              "DocumentMoniker": "D:\\Dev\\Learning\\LapTrinhWeb_Hutech\\ThucHanhLapTrinhWeb\\Buoi2\\TranTuanAnh_Buoi2\\Views\\Product\\Update.cshtml",
+              "RelativeDocumentMoniker": "Views\\Product\\Update.cshtml",
+              "ToolTip": "D:\\Dev\\Learning\\LapTrinhWeb_Hutech\\ThucHanhLapTrinhWeb\\Buoi2\\TranTuanAnh_Buoi2\\Views\\Product\\Update.cshtml",
+              "RelativeToolTip": "Views\\Product\\Update.cshtml",
+              "ViewState": "AgIAACMAAAAAAAAAAAAAACgAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-19T04:01:05.998Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Dev\\Learning\\LapTrinhWeb_Hutech\\ThucHanhLapTrinhWeb\\Buoi2\\TranTuanAnh_Buoi2\\Views\\Product\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Product\\Index.cshtml",
+              "ToolTip": "D:\\Dev\\Learning\\LapTrinhWeb_Hutech\\ThucHanhLapTrinhWeb\\Buoi2\\TranTuanAnh_Buoi2\\Views\\Product\\Index.cshtml",
+              "RelativeToolTip": "Views\\Product\\Index.cshtml",
+              "ViewState": "AgIAABgAAAAAAAAAAAAgwC8AAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-19T03:58:38.744Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Dev\\Learning\\LapTrinhWeb_Hutech\\ThucHanhLapTrinhWeb\\Buoi2\\TranTuanAnh_Buoi2\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
+              "ToolTip": "D:\\Dev\\Learning\\LapTrinhWeb_Hutech\\ThucHanhLapTrinhWeb\\Buoi2\\TranTuanAnh_Buoi2\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAACQAAAAAAAAAAAAgwDEAAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-19T03:57:48.836Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
