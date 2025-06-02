@@ -3,10 +3,13 @@ wwwroot\favicon.ico
 wwwroot\images\371744222_324062060194153_3279145154556531264_n-removebg-preview.png
 wwwroot\images\6442a106b0fdbc5c180c68c2ddc57999.jpg
 wwwroot\images\c.png
+wwwroot\images\chicken.png
+wwwroot\images\dog.png
 wwwroot\images\g.png
 wwwroot\images\Keyboard.png
 wwwroot\images\laptop.jpg
 wwwroot\images\mouse.png
+wwwroot\images\rabbit.png
 wwwroot\images\screen.png
 wwwroot\images\Smartphone.jpg
 wwwroot\images\ssd.png

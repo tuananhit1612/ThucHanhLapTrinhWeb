@@ -37,6 +37,14 @@
       "PackagePath": "staticwebassets\\images\\c.png"
     },
     {
+      "Id": "D:\\Dev\\Learning\\LapTrinhWeb_Hutech\\ThucHanhLapTrinhWeb\\Buoi2\\TranTuanAnh_Buoi2\\wwwroot\\images\\chicken.png",
+      "PackagePath": "staticwebassets\\images\\chicken.png"
+    },
+    {
+      "Id": "D:\\Dev\\Learning\\LapTrinhWeb_Hutech\\ThucHanhLapTrinhWeb\\Buoi2\\TranTuanAnh_Buoi2\\wwwroot\\images\\dog.png",
+      "PackagePath": "staticwebassets\\images\\dog.png"
+    },
+    {
       "Id": "D:\\Dev\\Learning\\LapTrinhWeb_Hutech\\ThucHanhLapTrinhWeb\\Buoi2\\TranTuanAnh_Buoi2\\wwwroot\\images\\g.png",
       "PackagePath": "staticwebassets\\images\\g.png"
     },
@@ -47,6 +55,10 @@
     {
       "Id": "D:\\Dev\\Learning\\LapTrinhWeb_Hutech\\ThucHanhLapTrinhWeb\\Buoi2\\TranTuanAnh_Buoi2\\wwwroot\\images\\mouse.png",
       "PackagePath": "staticwebassets\\images\\mouse.png"
+    },
+    {
+      "Id": "D:\\Dev\\Learning\\LapTrinhWeb_Hutech\\ThucHanhLapTrinhWeb\\Buoi2\\TranTuanAnh_Buoi2\\wwwroot\\images\\rabbit.png",
+      "PackagePath": "staticwebassets\\images\\rabbit.png"
     },
     {
       "Id": "D:\\Dev\\Learning\\LapTrinhWeb_Hutech\\ThucHanhLapTrinhWeb\\Buoi2\\TranTuanAnh_Buoi2\\wwwroot\\images\\screen.png",

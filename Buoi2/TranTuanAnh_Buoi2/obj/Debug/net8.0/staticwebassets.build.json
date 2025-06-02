@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "HzLrrXmsPMBPC6vpP9xfSS/5t1EMvTLCCF4x5hpq+7g=",
+  "Hash": "mjYMspuFs7l79bJy2jwo+W+Wy8N4gm5DukttxKhz7eo=",
   "Source": "TranTuanAnh_Buoi2",
   "BasePath": "_content/TranTuanAnh_Buoi2",
   "Mode": "Default",
@@ -164,6 +164,48 @@
       "OriginalItemSpec": "wwwroot\\images\\c.png"
     },
     {
+      "Identity": "D:\\Dev\\Learning\\LapTrinhWeb_Hutech\\ThucHanhLapTrinhWeb\\Buoi2\\TranTuanAnh_Buoi2\\wwwroot\\images\\chicken.png",
+      "SourceId": "TranTuanAnh_Buoi2",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Dev\\Learning\\LapTrinhWeb_Hutech\\ThucHanhLapTrinhWeb\\Buoi2\\TranTuanAnh_Buoi2\\wwwroot\\",
+      "BasePath": "_content/TranTuanAnh_Buoi2",
+      "RelativePath": "images/chicken#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "gc8mjs4d8f",
+      "Integrity": "wDYawCsIqitufQGduAW22DifQndgvUTzPuQfm0XN3T0=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\chicken.png"
+    },
+    {
+      "Identity": "D:\\Dev\\Learning\\LapTrinhWeb_Hutech\\ThucHanhLapTrinhWeb\\Buoi2\\TranTuanAnh_Buoi2\\wwwroot\\images\\dog.png",
+      "SourceId": "TranTuanAnh_Buoi2",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Dev\\Learning\\LapTrinhWeb_Hutech\\ThucHanhLapTrinhWeb\\Buoi2\\TranTuanAnh_Buoi2\\wwwroot\\",
+      "BasePath": "_content/TranTuanAnh_Buoi2",
+      "RelativePath": "images/dog#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "80y1e4fsu2",
+      "Integrity": "aLAZzrbEf2xC1KcXgix5Ta5ZfwdhMWs8wg00/hPpjXQ=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\dog.png"
+    },
+    {
       "Identity": "D:\\Dev\\Learning\\LapTrinhWeb_Hutech\\ThucHanhLapTrinhWeb\\Buoi2\\TranTuanAnh_Buoi2\\wwwroot\\images\\g.png",
       "SourceId": "TranTuanAnh_Buoi2",
       "SourceType": "Discovered",
@@ -246,6 +288,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\mouse.png"
+    },
+    {
+      "Identity": "D:\\Dev\\Learning\\LapTrinhWeb_Hutech\\ThucHanhLapTrinhWeb\\Buoi2\\TranTuanAnh_Buoi2\\wwwroot\\images\\rabbit.png",
+      "SourceId": "TranTuanAnh_Buoi2",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Dev\\Learning\\LapTrinhWeb_Hutech\\ThucHanhLapTrinhWeb\\Buoi2\\TranTuanAnh_Buoi2\\wwwroot\\",
+      "BasePath": "_content/TranTuanAnh_Buoi2",
+      "RelativePath": "images/rabbit#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "wh19yvx15p",
+      "Integrity": "LAIw2kKb0GD+GH7uqEu+YCXj6Fudd7vg2YAzO+78qZg=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\rabbit.png"
     },
     {
       "Identity": "D:\\Dev\\Learning\\LapTrinhWeb_Hutech\\ThucHanhLapTrinhWeb\\Buoi2\\TranTuanAnh_Buoi2\\wwwroot\\images\\screen.png",
@@ -1759,7 +1822,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 19 May 2025 04:04:07 GMT"
+          "Value": "Mon, 19 May 2025 04:07:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1804,7 +1867,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 19 May 2025 04:04:07 GMT"
+          "Value": "Mon, 19 May 2025 04:07:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1979,6 +2042,170 @@
         {
           "Name": "integrity",
           "Value": "sha256-PRJ3Q/g3H163rKq+wk6AfrzXyycufsA0Ur2lyBoVKAE="
+        }
+      ]
+    },
+    {
+      "Route": "images/chicken.gc8mjs4d8f.png",
+      "AssetFile": "D:\\Dev\\Learning\\LapTrinhWeb_Hutech\\ThucHanhLapTrinhWeb\\Buoi2\\TranTuanAnh_Buoi2\\wwwroot\\images\\chicken.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "88382"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"wDYawCsIqitufQGduAW22DifQndgvUTzPuQfm0XN3T0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 26 May 2025 01:02:06 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "gc8mjs4d8f"
+        },
+        {
+          "Name": "label",
+          "Value": "images/chicken.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-wDYawCsIqitufQGduAW22DifQndgvUTzPuQfm0XN3T0="
+        }
+      ]
+    },
+    {
+      "Route": "images/chicken.png",
+      "AssetFile": "D:\\Dev\\Learning\\LapTrinhWeb_Hutech\\ThucHanhLapTrinhWeb\\Buoi2\\TranTuanAnh_Buoi2\\wwwroot\\images\\chicken.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "88382"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"wDYawCsIqitufQGduAW22DifQndgvUTzPuQfm0XN3T0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 26 May 2025 01:02:06 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-wDYawCsIqitufQGduAW22DifQndgvUTzPuQfm0XN3T0="
+        }
+      ]
+    },
+    {
+      "Route": "images/dog.80y1e4fsu2.png",
+      "AssetFile": "D:\\Dev\\Learning\\LapTrinhWeb_Hutech\\ThucHanhLapTrinhWeb\\Buoi2\\TranTuanAnh_Buoi2\\wwwroot\\images\\dog.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "28232"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"aLAZzrbEf2xC1KcXgix5Ta5ZfwdhMWs8wg00/hPpjXQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 26 May 2025 01:02:06 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "80y1e4fsu2"
+        },
+        {
+          "Name": "label",
+          "Value": "images/dog.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-aLAZzrbEf2xC1KcXgix5Ta5ZfwdhMWs8wg00/hPpjXQ="
+        }
+      ]
+    },
+    {
+      "Route": "images/dog.png",
+      "AssetFile": "D:\\Dev\\Learning\\LapTrinhWeb_Hutech\\ThucHanhLapTrinhWeb\\Buoi2\\TranTuanAnh_Buoi2\\wwwroot\\images\\dog.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "28232"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"aLAZzrbEf2xC1KcXgix5Ta5ZfwdhMWs8wg00/hPpjXQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 26 May 2025 01:02:06 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-aLAZzrbEf2xC1KcXgix5Ta5ZfwdhMWs8wg00/hPpjXQ="
         }
       ]
     },
@@ -2311,6 +2538,88 @@
       ]
     },
     {
+      "Route": "images/rabbit.png",
+      "AssetFile": "D:\\Dev\\Learning\\LapTrinhWeb_Hutech\\ThucHanhLapTrinhWeb\\Buoi2\\TranTuanAnh_Buoi2\\wwwroot\\images\\rabbit.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "41072"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"LAIw2kKb0GD+GH7uqEu+YCXj6Fudd7vg2YAzO+78qZg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 26 May 2025 01:02:06 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-LAIw2kKb0GD+GH7uqEu+YCXj6Fudd7vg2YAzO+78qZg="
+        }
+      ]
+    },
+    {
+      "Route": "images/rabbit.wh19yvx15p.png",
+      "AssetFile": "D:\\Dev\\Learning\\LapTrinhWeb_Hutech\\ThucHanhLapTrinhWeb\\Buoi2\\TranTuanAnh_Buoi2\\wwwroot\\images\\rabbit.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "41072"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"LAIw2kKb0GD+GH7uqEu+YCXj6Fudd7vg2YAzO+78qZg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 26 May 2025 01:02:06 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "wh19yvx15p"
+        },
+        {
+          "Name": "label",
+          "Value": "images/rabbit.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-LAIw2kKb0GD+GH7uqEu+YCXj6Fudd7vg2YAzO+78qZg="
+        }
+      ]
+    },
+    {
       "Route": "images/screen.0fsppkp6ff.png",
       "AssetFile": "D:\\Dev\\Learning\\LapTrinhWeb_Hutech\\ThucHanhLapTrinhWeb\\Buoi2\\TranTuanAnh_Buoi2\\wwwroot\\images\\screen.png",
       "Selectors": [],
@@ -2497,7 +2806,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 19 May 2025 04:00:39 GMT"
+          "Value": "Mon, 19 May 2025 04:07:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2542,7 +2851,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 19 May 2025 04:00:39 GMT"
+          "Value": "Mon, 19 May 2025 04:07:30 GMT"
         },
         {
           "Name": "Cache-Control",

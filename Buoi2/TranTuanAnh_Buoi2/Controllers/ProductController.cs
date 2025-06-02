@@ -122,7 +122,7 @@ ICategoryRepository categoryRepository)
         {
             const long maxFileSize = 2 * 1024 * 1024;
             var allowedTypes = new[] { "image/jpeg", "image/png", "image/gif" };
-
+            ModelState.Remove(nameof(product.ImageUrls));
             var oldProduct = _productRepository.GetById(product.Id);
             if (oldProduct == null)
             {
@@ -173,12 +173,9 @@ ICategoryRepository categoryRepository)
                 product.ImageUrls = oldProduct.ImageUrls;
             }
 
-            if (ModelState.IsValid)
-            {
-                _productRepository.Update(product);
-                return RedirectToAction("Index");
-            }
-            return View(product);
+            _productRepository.Update(product);
+            return RedirectToAction("Index");
+
         }
         // Show the product delete confirmation
         public IActionResult Delete(int id)
