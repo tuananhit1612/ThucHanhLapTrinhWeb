@@ -1,0 +1,65 @@
+﻿@model IEnumerable<TranTuanAnh_Buoi4.Models.Product>
+@{
+    ViewData["Title"] = "HomePage";
+    int numOfQuantity = 1;
+
+}
+<div class="container mt-5">
+    <div class="row mb-4">
+        <div class="col text-center">
+            <h2 class="fw-bold display-5 text-primary">🐾 Danh sách thú cưng</h2>
+            <p class="text-muted">Khám phá những người bạn thú cưng tuyệt vời tại PetShop!</p>
+        </div>
+    </div>
+
+    <div class="row g-4">
+        @foreach (var product in Model)
+        {
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="card h-100 shadow-sm border-0 product-card">
+                    @if (!string.IsNullOrEmpty(product.ImageUrl))
+                    {
+                        <img src="@product.ImageUrl" class="card-img-top rounded-top" alt="@product.Name" style="height: 220px; object-fit: cover;">
+                    }
+                    else
+                    {
+                        <div class="d-flex align-items-center justify-content-center bg-light rounded-top" style="height: 220px;">
+                            <span class="text-muted">No image</span>
+                        </div>
+                    }
+
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title fw-bold">@product.Name</h5>
+                        <h6 class="card-subtitle mb-3 text-danger fw-bold fs-5">@product.Price.ToString("C")</h6>
+                        <p class="card-text text-truncate" title="@product.Description">@product.Description</p>
+
+                        <div class="mt-auto d-grid gap-2">
+                            <a asp-action="Display" asp-route-id="@product.Id" class="btn btn-outline-primary">
+                                <i class="bi bi-eye"></i> Chi tiết sản phẩm
+                            </a>
+                            <a asp-action="AddToCart" asp-route-productId="@product.Id" asp-controller="ShoppingCart" asp-route-quantity ="@numOfQuantity" class="btn btn-success">
+                                <i class="bi bi-cart-plus"></i> Thêm vào giỏ hàng
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>
+
+<!-- Custom CSS -->
+<style>
+    .product-card {
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+        }
+
+        .product-card .card-img-top {
+            border-radius: 0.75rem 0.75rem 0 0;
+        }
+</style>

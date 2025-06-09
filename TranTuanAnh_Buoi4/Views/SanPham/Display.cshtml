@@ -1,0 +1,78 @@
+﻿@model TranTuanAnh_Buoi4.Models.Product
+
+<div class="container mt-5">
+    <div class="row mb-4">
+        <div class="col text-center">
+            <h2 class="fw-bold display-5 text-primary">🐾 Chi tiết sản phẩm</h2>
+        </div>
+    </div>
+
+    <div class="row justify-content-center">
+        <div class="col-md-10">
+            <div class="card shadow-lg border-0 p-4">
+                <div class="row g-4">
+                    <!-- Left: Main Image + Other Images -->
+                    <div class="col-md-5 text-center">
+                        <h5 class="fw-bold mb-3">Ảnh sản phẩm</h5>
+                        @if (!string.IsNullOrEmpty(Model.ImageUrl))
+                        {
+                            <img src="@Model.ImageUrl" alt="@Model.Name" class="img-fluid rounded mb-3 border" style="max-height: 400px; object-fit: contain;" />
+                        }
+                        else
+                        {
+                            <div class="alert alert-warning p-2">No image available</div>
+                        }
+
+                        <h6 class="fw-bold mb-2">Ảnh khác</h6>
+                        @if (Model.Images?.Any() == true)
+                        {
+                            <div class="d-flex flex-wrap gap-2 justify-content-center">
+                                @foreach (var image in Model.Images)
+                                {
+                                    <img src="@image.Url" alt="Other Image" class="img-thumbnail other-img" style="width: 100px; height: 100px; object-fit: cover; cursor: pointer;" />
+                                }
+                            </div>
+                        }
+                        else
+                        {
+                            <div class="alert alert-warning p-2">No additional images available</div>
+                        }
+                    </div>
+
+                    <!-- Right: Product Details -->
+                    <div class="col-md-7">
+                        <h3 class="fw-bold mb-3">@Model.Name</h3>
+                        <h4 class="text-danger fw-bold mb-4">@Model.Price.ToString("C")</h4>
+
+                        <dl class="row mb-4">
+                            <dt class="col-sm-4 fw-bold">Danh mục</dt>
+                            <dd class="col-sm-8">@Model.Category?.Name</dd>
+
+                            <dt class="col-sm-4 fw-bold">Mô tả</dt>
+                            <dd class="col-sm-8">@Model.Description</dd>
+                        </dl>
+
+                        <!-- Action Buttons -->
+                        <div class="d-grid gap-3 d-md-flex">
+                            <a asp-action="AddToCart" asp-route-id="@Model.Id" class="btn btn-success btn-lg px-4">
+                                <i class="bi bi-cart-plus"></i> Thêm vào giỏ hàng
+                            </a>
+                            <a asp-action="Index" class="btn btn-secondary btn-lg px-4">
+                                <i class="bi bi-arrow-left"></i> Quay lại danh sách
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Optional: Hover effect for other images -->
+<style>
+    .other-img:hover {
+        transform: scale(1.05);
+        transition: transform 0.3s ease;
+        border-color: #0d6efd;
+    }
+</style>

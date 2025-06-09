@@ -1,0 +1,24 @@
+﻿@model TranTuanAnh_Buoi4.Models.Category
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="card shadow">
+                <div class="card-header bg-primary text-white">
+                    <h2 class="mb-0">Category Details</h2>
+                </div>
+                <div class="card-body">
+                    <dl class="row mb-4">
+                        <dt class="col-sm-4">Id</dt>
+                        <dd class="col-sm-8">@Model.Id</dd>
+                        <dt class="col-sm-4">Name</dt>
+                        <dd class="col-sm-8">@Model.Name</dd>
+                    </dl>
+                    <a asp-action="Index" class="btn btn-primary w-100">Back to List</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

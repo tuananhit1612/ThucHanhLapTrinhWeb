@@ -1,0 +1,18 @@
+﻿@model int
+
+<div class="container mt-5 text-center">
+    <h2 class="fw-bold text-success mb-4">🎉 Đặt hàng thành công!</h2>
+    <p class="fs-5">
+        Cảm ơn bạn đã mua hàng tại <strong>PetShop</strong>! 🐾
+    </p>
+    <p class="fs-5">
+        Mã đơn hàng của bạn là: <span class="fw-bold text-primary">#@Model</span>
+    </p>
+    <p class="text-muted">
+        Chúng tôi sẽ xử lý đơn hàng của bạn và giao sớm nhất có thể.
+    </p>
+
+    <a asp-action="Index" asp-controller="Home" class="btn btn-outline-primary mt-4">
+        <i class="bi bi-house"></i> Quay về trang chủ
+    </a>
+</div>

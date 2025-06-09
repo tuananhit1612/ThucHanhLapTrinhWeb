@@ -1,0 +1,58 @@
+﻿@model IEnumerable<TranTuanAnh_Buoi4.Models.Order>
+
+@{
+    ViewData["Title"] = "Quản lý của tôi";
+}
+
+<div class="container mt-5">
+    <h2 class="fw-bold text-primary mb-4">📋 Quản lý đơn hàng</h2>
+
+    <table class="table table-bordered table-hover align-middle text-center">
+        <thead class="table-dark">
+            <tr>
+                <th>ID đơn hàng</th>
+                <th>Ngày đặt</th>
+                <th>Tổng tiền</th>
+                <th>Khách hàng</th>
+                <th>Email</th>
+                <th>Địa chỉ giao hàng</th>
+                <th>Thao tác</th>
+            </tr>
+        </thead>
+        <tbody>
+            @if (Model != null && Model.Any())
+            {
+                foreach (var item in Model.OrderByDescending(o => o.OrderDate))
+                {
+                    <tr>
+                        <td class="fw-bold text-primary">#@item.Id</td>
+                        <td>@item.OrderDate.ToString("dd/MM/yyyy HH:mm")</td>
+                        <td class="text-success fw-bold">@item.TotalPrice.ToString("C")</td>
+                        <td>@item.ApplicationUser?.FullName</td>
+                        <td>@item.ApplicationUser?.Email</td>
+                        <td>@item.ShippingAddress</td>
+                        <td>
+                            <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-outline-primary btn-sm">
+                                <i class="bi bi-pencil-square"></i> Sửa
+                            </a>
+                            <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-outline-info btn-sm mx-1">
+                                <i class="bi bi-eye"></i> Xem
+                            </a>
+                            <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-outline-danger btn-sm">
+                                <i class="bi bi-trash"></i> Xóa
+                            </a>
+                        </td>
+                    </tr>
+                }
+            }
+            else
+            {
+                <tr>
+                    <td colspan="7" class="text-center text-muted">
+                        Không có đơn hàng nào.
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
