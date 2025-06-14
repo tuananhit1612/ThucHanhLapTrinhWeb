@@ -1,0 +1,155 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Dev\\Learning\\LapTrinhWeb_Hutech\\LyThuyet\\TranTuanAnh_API\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{411BDB48-2881-44A0-B1A5-A58B14788A5F}|TranTuanAnh_API.csproj|d:\\dev\\learning\\laptrinhweb_hutech\\lythuyet\\trantuananh_api\\repositories\\productrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{411BDB48-2881-44A0-B1A5-A58B14788A5F}|TranTuanAnh_API.csproj|solutionrelative:repositories\\productrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{411BDB48-2881-44A0-B1A5-A58B14788A5F}|TranTuanAnh_API.csproj|d:\\dev\\learning\\laptrinhweb_hutech\\lythuyet\\trantuananh_api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{411BDB48-2881-44A0-B1A5-A58B14788A5F}|TranTuanAnh_API.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{411BDB48-2881-44A0-B1A5-A58B14788A5F}|TranTuanAnh_API.csproj|d:\\dev\\learning\\laptrinhweb_hutech\\lythuyet\\trantuananh_api\\controllers\\productapicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{411BDB48-2881-44A0-B1A5-A58B14788A5F}|TranTuanAnh_API.csproj|solutionrelative:controllers\\productapicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{411BDB48-2881-44A0-B1A5-A58B14788A5F}|TranTuanAnh_API.csproj|d:\\dev\\learning\\laptrinhweb_hutech\\lythuyet\\trantuananh_api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{411BDB48-2881-44A0-B1A5-A58B14788A5F}|TranTuanAnh_API.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{411BDB48-2881-44A0-B1A5-A58B14788A5F}|TranTuanAnh_API.csproj|d:\\dev\\learning\\laptrinhweb_hutech\\lythuyet\\trantuananh_api\\model\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{411BDB48-2881-44A0-B1A5-A58B14788A5F}|TranTuanAnh_API.csproj|solutionrelative:model\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{411BDB48-2881-44A0-B1A5-A58B14788A5F}|TranTuanAnh_API.csproj|d:\\dev\\learning\\laptrinhweb_hutech\\lythuyet\\trantuananh_api\\repositories\\iproductrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{411BDB48-2881-44A0-B1A5-A58B14788A5F}|TranTuanAnh_API.csproj|solutionrelative:repositories\\iproductrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{411BDB48-2881-44A0-B1A5-A58B14788A5F}|TranTuanAnh_API.csproj|d:\\dev\\learning\\laptrinhweb_hutech\\lythuyet\\trantuananh_api\\model\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{411BDB48-2881-44A0-B1A5-A58B14788A5F}|TranTuanAnh_API.csproj|solutionrelative:model\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 200,
+          "SelectedChildIndex": 8,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\Dev\\Learning\\LapTrinhWeb_Hutech\\LyThuyet\\TranTuanAnh_API\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "D:\\Dev\\Learning\\LapTrinhWeb_Hutech\\LyThuyet\\TranTuanAnh_API\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-06-14T02:09:23.556Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Product.cs",
+              "DocumentMoniker": "D:\\Dev\\Learning\\LapTrinhWeb_Hutech\\LyThuyet\\TranTuanAnh_API\\Model\\Product.cs",
+              "RelativeDocumentMoniker": "Model\\Product.cs",
+              "ToolTip": "D:\\Dev\\Learning\\LapTrinhWeb_Hutech\\LyThuyet\\TranTuanAnh_API\\Model\\Product.cs",
+              "RelativeToolTip": "Model\\Product.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-14T02:04:54.807Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Dev\\Learning\\LapTrinhWeb_Hutech\\LyThuyet\\TranTuanAnh_API\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "D:\\Dev\\Learning\\LapTrinhWeb_Hutech\\LyThuyet\\TranTuanAnh_API\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAwwBYAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-14T01:58:31.18Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ProductApiController.cs",
+              "DocumentMoniker": "D:\\Dev\\Learning\\LapTrinhWeb_Hutech\\LyThuyet\\TranTuanAnh_API\\Controllers\\ProductApiController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ProductApiController.cs",
+              "ToolTip": "D:\\Dev\\Learning\\LapTrinhWeb_Hutech\\LyThuyet\\TranTuanAnh_API\\Controllers\\ProductApiController.cs",
+              "RelativeToolTip": "Controllers\\ProductApiController.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAQwAcAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-14T01:44:16.391Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ProductRepository.cs",
+              "DocumentMoniker": "D:\\Dev\\Learning\\LapTrinhWeb_Hutech\\LyThuyet\\TranTuanAnh_API\\Repositories\\ProductRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\ProductRepository.cs",
+              "ToolTip": "D:\\Dev\\Learning\\LapTrinhWeb_Hutech\\LyThuyet\\TranTuanAnh_API\\Repositories\\ProductRepository.cs",
+              "RelativeToolTip": "Repositories\\ProductRepository.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAYwCkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-14T01:16:54.8Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "IProductRepository.cs",
+              "DocumentMoniker": "D:\\Dev\\Learning\\LapTrinhWeb_Hutech\\LyThuyet\\TranTuanAnh_API\\Repositories\\IProductRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\IProductRepository.cs",
+              "ToolTip": "D:\\Dev\\Learning\\LapTrinhWeb_Hutech\\LyThuyet\\TranTuanAnh_API\\Repositories\\IProductRepository.cs",
+              "RelativeToolTip": "Repositories\\IProductRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-14T01:15:58.423Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "D:\\Dev\\Learning\\LapTrinhWeb_Hutech\\LyThuyet\\TranTuanAnh_API\\Model\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "Model\\ApplicationDbContext.cs",
+              "ToolTip": "D:\\Dev\\Learning\\LapTrinhWeb_Hutech\\LyThuyet\\TranTuanAnh_API\\Model\\ApplicationDbContext.cs",
+              "RelativeToolTip": "Model\\ApplicationDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-14T01:14:31.112Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
