@@ -1,0 +1,21 @@
+﻿@model int
+
+<div class="container mt-5 text-center">
+    <h2 class="fw-bold text-success mb-4">✅ Đặt xe thành công!</h2>
+
+    <p class="fs-5">
+        Cảm ơn bạn đã tin tưởng và lựa chọn <strong>Showroom TuanAnhAuto</strong>! 🚗
+    </p>
+
+    <p class="fs-5">
+        Mã đơn hàng của bạn là: <span class="fw-bold text-primary">#@Model</span>
+    </p>
+
+    <p class="text-muted">
+        Đơn hàng của bạn đang được xử lý. Chúng tôi sẽ liên hệ để xác nhận và giao xe theo thời gian hẹn sớm nhất.
+    </p>
+
+    <a asp-action="Index" asp-controller="Home" class="btn btn-outline-primary mt-4 rounded-pill px-4">
+        <i class="bi bi-house-door-fill"></i> Quay về trang chủ
+    </a>
+</div>

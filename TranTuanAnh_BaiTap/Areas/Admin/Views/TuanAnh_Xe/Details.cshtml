@@ -1,0 +1,39 @@
+﻿@model TranTuanAnh_BaiTap.Models.TuanAnh_Xe
+@{
+    ViewData["Title"] = "Chi tiết xe";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container mt-4">
+    <div class="card shadow border-0">
+        <div class="card-header bg-primary text-white d-flex justify-content-between align-items-center">
+            <h5 class="mb-0">Thông tin chi tiết xe</h5>
+            <a asp-action="Index" class="btn btn-light btn-sm">
+                <i class="bi bi-arrow-left-circle"></i> Quay lại
+            </a>
+        </div>
+        <div class="card-body">
+            <dl class="row">
+                <dt class="col-sm-3">Tên xe</dt>
+                <dd class="col-sm-9">@Model.TenXe</dd>
+
+                <dt class="col-sm-3">Giá</dt>
+                <dd class="col-sm-9">@string.Format("{0:N0} đ", Model.Gia)</dd>
+
+                <dt class="col-sm-3">Ngày sản xuất</dt>
+                <dd class="col-sm-9">@Model.NgaySanXuat.ToString("dd/MM/yyyy")</dd>
+
+                <dt class="col-sm-3">Hãng xe</dt>
+                <dd class="col-sm-9">@Model.HangXe?.TenHang</dd>
+            </dl>
+        </div>
+        <div class="card-footer text-end">
+            <a asp-action="Edit" asp-route-id="@Model.XeID" class="btn btn-warning me-2">
+                <i class="bi bi-pencil-square"></i> Sửa
+            </a>
+            <a asp-action="Delete" asp-route-id="@Model.XeID" class="btn btn-danger">
+                <i class="bi bi-trash"></i> Xóa
+            </a>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,93 @@
+﻿@model TuanAnh_DonHang
+
+@{
+    ViewData["Title"] = "Chi Tiết Đơn Đặt Xe";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container mt-4">
+    <h2 class="text-center fw-bold mb-4 text-primary">
+        <i class="bi bi-car-front"></i> Chi Tiết Đơn Đặt Xe
+    </h2>
+
+    <!-- Thông tin khách hàng -->
+    <div class="card mb-4">
+        <div class="card-header bg-warning text-dark fw-bold">
+            <i class="bi bi-person-circle"></i> Thông Tin Khách Hàng
+        </div>
+        <div class="card-body">
+            <p>
+                <i class="bi bi-person-fill"></i> <strong>Tên:</strong> @Model.ApplicationUser?.FullName
+            </p>
+            <p>
+                <i class="bi bi-envelope-fill"></i> <strong>Email:</strong> @Model.ApplicationUser?.Email
+            </p>
+            <p>
+                <i class="bi bi-telephone-fill"></i> <strong>Số điện thoại:</strong> @Model.ApplicationUser?.PhoneNumber
+            </p>
+        </div>
+    </div>
+
+    <!-- Thông tin đơn hàng -->
+    <div class="card mb-4">
+        <div class="card-header bg-info text-dark fw-bold">
+            <i class="bi bi-file-earmark-text"></i> Thông Tin Đơn Hàng
+        </div>
+        <div class="card-body">
+            <p>
+                <i class="bi bi-receipt"></i> <strong>Mã đơn hàng:</strong> #@Model.Id
+            </p>
+            <p>
+                <i class="bi bi-calendar-check"></i> <strong>Ngày đặt:</strong> @Model.OrderDate.ToString("dd/MM/yyyy")
+            </p>
+            <p>
+                <i class="bi bi-geo-alt-fill"></i> <strong>Địa chỉ giao xe:</strong> @Model.ShippingAddress
+            </p>
+            <p>
+                <i class="bi bi-chat-left-text-fill"></i> <strong>Ghi chú:</strong> @Model.Notes
+            </p>
+        </div>
+    </div>
+
+    <!-- Danh sách xe -->
+    <div class="card mb-4">
+        <div class="card-header bg-success text-white fw-bold">
+            <i class="bi bi-truck-front"></i> Xe Trong Đơn Hàng
+        </div>
+        <div class="card-body p-0">
+            <table class="table table-bordered table-hover mb-0 text-center">
+                <thead class="table-success">
+                    <tr>
+                        <th>Mã xe</th>
+                        <th>Tên xe</th>
+                        <th>Số lượng</th>
+                        <th>Giá</th>
+                        <th>Thành tiền</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var ct in Model.OrderDetails)
+                    {
+                        <tr>
+                            <td>@ct.XeId</td>
+                            <td>@ct.Xe?.TenXe</td>
+                            <td>@ct.Quantity</td>
+                            <td>@ct.Price.ToString("N0") đ</td>
+                            <td class="fw-bold text-success">@((ct.Price * ct.Quantity).ToString("N0")) đ</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- Tổng tiền và quay lại -->
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <a asp-action="Index" class="btn btn-primary">
+            <i class="bi bi-arrow-left"></i> Quay lại danh sách
+        </a>
+        <h4 class="text-danger fw-bold mb-0">
+            <i class="bi bi-currency-dollar"></i> Tổng tiền: @Model.TotalPrice.ToString("N0") đ
+        </h4>
+    </div>
+</div>

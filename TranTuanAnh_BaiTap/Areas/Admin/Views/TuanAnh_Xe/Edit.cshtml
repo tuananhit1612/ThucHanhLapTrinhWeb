@@ -1,0 +1,55 @@
+﻿@model TranTuanAnh_BaiTap.Models.TuanAnh_Xe
+@{
+    ViewData["Title"] = "Chỉnh sửa xe";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container mt-4">
+    <div class="card shadow border-0">
+        <div class="card-header bg-warning text-dark d-flex justify-content-between align-items-center">
+            <h5 class="mb-0">Chỉnh sửa thông tin xe</h5>
+            <a asp-action="Index" class="btn btn-light btn-sm">
+                <i class="bi bi-arrow-left-circle"></i> Quay lại
+            </a>
+        </div>
+        <div class="card-body">
+            <form asp-action="Edit" method="post">
+                <input type="hidden" asp-for="XeID" />
+
+                <div class="mb-3">
+                    <label asp-for="TenXe" class="form-label"></label>
+                    <input asp-for="TenXe" class="form-control" />
+                    <span asp-validation-for="TenXe" class="text-danger"></span>
+                </div>
+
+                <div class="mb-3">
+                    <label asp-for="Gia" class="form-label"></label>
+                    <input asp-for="Gia" class="form-control" />
+                    <span asp-validation-for="Gia" class="text-danger"></span>
+                </div>
+
+                <div class="mb-3">
+                    <label asp-for="NgaySanXuat" class="form-label"></label>
+                    <input asp-for="NgaySanXuat" class="form-control" type="date" />
+                    <span asp-validation-for="NgaySanXuat" class="text-danger"></span>
+                </div>
+
+                <div class="mb-3">
+                    <label asp-for="HangXeID" class="form-label">Hãng xe</label>
+                    <select asp-for="HangXeID" asp-items="ViewBag.HangXeList" class="form-select">
+                        <option value="">-- Chọn hãng xe --</option>
+                    </select>
+                    <span asp-validation-for="HangXeID" class="text-danger"></span>
+                </div>
+
+                <button type="submit" class="btn btn-warning">
+                    <i class="bi bi-pencil-square"></i> Cập nhật xe
+                </button>
+            </form>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

@@ -1,0 +1,62 @@
+﻿@model ShoppingCart
+
+<div class="container mt-5">
+    <h2 class="fw-bold text-primary mb-4">🛒 Giỏ hàng của bạn</h2>
+
+    @if (Model.Items != null && Model.Items.Count > 0)
+    {
+        <table class="table table-bordered table-hover align-middle text-center">
+            <thead class="table-primary">
+                <tr>
+                    <th>Sản phẩm</th>
+                    <th>Số lượng</th>
+                    <th>Giá</th>
+                    <th>Thành tiền</th>
+                    <th>Hành động</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model.Items)
+                {
+                    <tr>
+                        <td class="fw-semibold">@item.Name</td>
+
+                        <td>
+                            <div class="d-flex justify-content-center align-items-center gap-2">
+                                <form asp-action="DecreaseQuantity" asp-route-productId="@item.ProductId" method="post" class="d-inline">
+                                    <button type="submit" class="btn btn-outline-secondary btn-sm">-</button>
+                                </form>
+
+                                <span class="fw-bold">@item.Quantity</span>
+
+                                <form asp-action="IncreaseQuantity" asp-route-productId="@item.ProductId" method="post" class="d-inline">
+                                    <button type="submit" class="btn btn-outline-secondary btn-sm">+</button>
+                                </form>
+                            </div>
+                        </td>
+
+                        <td class="text-danger fw-bold">@item.Price.ToString("C")</td>
+                        <td class="text-success fw-bold">@((item.Price * item.Quantity).ToString("C"))</td>
+                        <td>
+                            <a asp-action="RemoveFromCart" asp-route-productId="@item.ProductId" class="btn btn-outline-danger btn-sm">
+                                <i class="bi bi-trash"></i> Xóa
+                            </a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+
+        <div class="text-end mt-3">
+            <a asp-action="Checkout" class="btn btn-success btn-lg">
+                <i class="bi bi-credit-card"></i> Tiến hành thanh toán
+            </a>
+        </div>
+    }
+    else
+    {
+        <div class="alert alert-info text-center">
+            🐾 Giỏ hàng của bạn đang trống. Hãy thêm sản phẩm nhé!
+        </div>
+    }
+</div>

@@ -1,0 +1,29 @@
+﻿@model TuanAnh_HangXe
+@{
+    ViewData["Title"] = "Xóa hãng xe";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card shadow">
+                <div class="card-header bg-danger text-white">
+                    <h3 class="mb-0">Bạn có chắc chắn muốn xóa hãng xe này?</h3>
+                </div>
+                <div class="card-body">
+                    <div class="mb-3">
+                        <h5>Mã hãng: <span class="fw-normal">@Model.HangXeID</span></h5>
+                        <h5>Tên hãng: <span class="fw-normal">@Model.TenHang</span></h5>
+                    </div>
+
+                    <form asp-action="DeleteConfirmed" method="post" class="d-flex gap-2">
+                        <input type="hidden" asp-for="HangXeID" />
+                        <input type="submit" value="Xóa" class="btn btn-danger" />
+                        <a asp-action="Index" class="btn btn-secondary">Hủy</a>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

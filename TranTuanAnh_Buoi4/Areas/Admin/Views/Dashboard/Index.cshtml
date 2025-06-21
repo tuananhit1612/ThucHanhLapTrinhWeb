@@ -1,0 +1,145 @@
+﻿@{
+    ViewData["Title"] = "Dashboard";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>@ViewData["Title"]</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container mt-4">
+        <h2 class="mb-4 text-center">Dashboard</h2>
+
+        <!-- Thống kê tổng quan -->
+        <div class="row text-white">
+            <div class="col-md-4">
+                <div class="card bg-primary mb-3">
+                    <div class="card-body">
+                        <h5 class="card-title">Số lượng khách hàng</h5>
+                        <h2 class="card-text">@ViewBag.TotalCustomers</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card bg-success mb-3">
+                    <div class="card-body">
+                        <h5 class="card-title">Số lượng đơn hàng</h5>
+                        <h2 class="card-text">@ViewBag.TotalOrders</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card bg-warning mb-3">
+                    <div class="card-body">
+                        <h5 class="card-title">Tổng doanh số</h5>
+                        <h2 class="card-text">@ViewBag.TotalRevenue.ToString("N0") VNĐ</h2>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Biểu đồ thống kê -->
+            <div class="row mt-4">
+                <div class="col-md-6">
+                    <h5 class="text-center">Biểu đồ số lượng đơn hàng theo ngày</h5>
+                    <canvas id="ordersChart"></canvas>
+                </div>
+                <div class="col-md-6">
+                    <h5 class="text-center">Biểu đồ doanh số theo ngày</h5>
+                    <canvas id="revenueChart"></canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+                document.addEventListener("DOMContentLoaded", function () {
+                    fetch('/Admin/Dashboard/GetChartData')  // Gọi hàm để lấy thông tin data vẽ biểu đồ
+                        .then(response => {
+                            console.log(response);
+                            if (!response.ok) {
+                                throw new Error(`HTTP error! Status: ${response.status}`);
+                            }
+                            return response.json();
+                        })
+                        .then(data => {
+                            if (!data || data.length === 0) {
+                                console.warn("Không có dữ liệu trả về từ API.");
+                                return;
+                            }
+
+                    let dates = data.map(d => d.date);
+                    let orders = data.map(d => d.orders);
+                    let revenue = data.map(d => d.revenue);
+
+                    // Vẽ biểu đồ đơn hàng
+                    const ordersChartCanvas = document.getElementById('ordersChart');
+                    if (ordersChartCanvas) {
+                        const ctxOrders = ordersChartCanvas.getContext('2d');
+                        new Chart(ctxOrders, {
+                            type: 'line',
+                            data: {
+                                labels: dates,
+                                datasets: [{
+                                    label: 'Số lượng đơn hàng',
+                                    data: orders,
+                                    backgroundColor: 'rgba(54, 162, 235, 0.2)',
+                                    borderColor: 'rgba(54, 162, 235, 1)',
+                                    borderWidth: 2,
+                                    fill: true,
+                                    tension: 0.3  // Làm đường biểu đồ mềm mại hơn
+                                }]
+                            },
+                            options: {
+                                responsive: true,
+                                plugins: {
+                                    legend: { display: true }
+                                }
+                            }
+                        });
+                    } else {
+                        console.error("Không tìm thấy phần tử có ID 'ordersChart'.");
+                    }
+
+                    // Vẽ biểu đồ doanh số
+                    const revenueChartCanvas = document.getElementById('revenueChart');
+                    if (revenueChartCanvas) {
+                        const ctxRevenue = revenueChartCanvas.getContext('2d');
+                        new Chart(ctxRevenue, {
+                            type: 'line',
+                            data: {
+                                labels: dates,
+                                datasets: [{
+                                    label: 'Doanh số (VNĐ)',
+                                    data: revenue,
+                                    backgroundColor: 'rgba(255, 99, 132, 0.2)',
+                                    borderColor: 'rgba(255, 99, 132, 1)',
+                                    borderWidth: 2,
+                                    fill: true,
+                                    tension: 0.3  // Làm đường biểu đồ mềm mại hơn
+                                }]
+                            },
+                            options: {
+                                responsive: true,
+                                plugins: {
+                                    legend: { display: true }
+                                }
+                            }
+                        });
+                    } else {
+                        console.error("Không tìm thấy phần tử có ID 'revenueChart'.");}
+                })
+                .catch(error => {
+                    console.error("Lỗi khi tải dữ liệu biểu đồ:", error);
+                });
+        });
+
+    </script>
+
+</body>
+</html>

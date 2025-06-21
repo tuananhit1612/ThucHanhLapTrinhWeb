@@ -1,0 +1,40 @@
+﻿@model IEnumerable<TuanAnh_Xe>
+@{
+    ViewData["Title"] = "Showroom Xe";
+    int numOfQuantity = 1;
+}
+
+<div class="container mt-5">
+    <h2 class="text-center text-uppercase mb-4 fw-bold text-primary">🚗 Showroom Xe Cao Cấp</h2>
+
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+        @foreach (var xe in Model)
+        {
+            <div class="col">
+                <div class="card h-100 shadow-sm border-0 rounded-4">
+                    <img src="https://source.unsplash.com/600x400/?car,auto" class="card-img-top rounded-top-4" alt="Car image">
+
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold text-dark">@xe.TenXe</h5>
+                        <p class="card-text text-muted mb-1">
+                            Giá: <strong class="text-danger">@String.Format("{0:N0} đ", xe.Gia)</strong>
+                        </p>
+                        <p class="card-text small">
+                            Ngày sản xuất: <strong>@xe.NgaySanXuat.ToString("dd/MM/yyyy")</strong><br />
+                            Hãng xe: <strong>@xe.HangXe?.TenHang</strong>
+                        </p>
+                    </div>
+
+                    <div class="card-footer bg-white border-top-0 d-flex justify-content-between px-3 pb-3">
+                        <form asp-controller="ShoppingCart" asp-action="AddToCart" asp-route-id="@xe.XeID" asp-route-quantity="@numOfQuantity" method="post">
+                            <input type="hidden" name="id" value="@xe.XeID" />
+                            <button type="submit" class="btn btn-outline-success btn-sm rounded-pill px-3">
+                                <i class="bi bi-cart-plus"></i> Giỏ hàng
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>

@@ -1,0 +1,29 @@
+﻿@model TranTuanAnh_BaiTap.Models.TuanAnh_HangXe
+@{
+    ViewData["Title"] = "Chỉnh sửa hãng xe";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container mt-4">
+    <div class="card shadow">
+        <div class="card-header bg-warning text-dark d-flex justify-content-between">
+            <h5 class="mb-0">Chỉnh sửa hãng xe</h5>
+            <a asp-action="Index" class="btn btn-light btn-sm"><i class="bi bi-arrow-left-circle"></i> Quay lại</a>
+        </div>
+        <div class="card-body">
+            <form asp-action="Edit" method="post">
+                <input type="hidden" asp-for="HangXeID" />
+                <div class="mb-3">
+                    <label asp-for="TenHang" class="form-label"></label>
+                    <input asp-for="TenHang" class="form-control" />
+                    <span asp-validation-for="TenHang" class="text-danger"></span>
+                </div>
+                <button type="submit" class="btn btn-warning"><i class="bi bi-pencil-square"></i> Cập nhật</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

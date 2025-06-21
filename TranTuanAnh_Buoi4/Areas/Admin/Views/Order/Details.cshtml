@@ -1,0 +1,93 @@
+﻿@model TranTuanAnh_Buoi4.Models.Order
+
+@{
+    ViewData["Title"] = "Chi Tiết Đơn Hàng";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container mt-4">
+    <h2 class="text-center fw-bold mb-4">
+        <i class="bi bi-cart4"></i> Chi Tiết Đơn Hàng
+    </h2>
+
+    <!-- Thông tin khách hàng -->
+    <div class="card mb-4">
+        <div class="card-header bg-warning text-dark fw-bold">
+            <i class="bi bi-person-circle"></i> Thông Tin Khách Hàng
+        </div>
+        <div class="card-body">
+            <p>
+                <i class="bi bi-person-fill"></i> <strong>Tên:</strong> @Model.ApplicationUser?.FullName
+            </p>
+            <p>
+                <i class="bi bi-envelope-fill"></i> <strong>Email:</strong> @Model.ApplicationUser?.Email
+            </p>
+            <p>
+                <i class="bi bi-telephone-fill"></i> <strong>Số điện thoại:</strong> <!-- Bạn có thể thêm PhoneNumber vào ApplicationUser nếu có -->
+            </p>
+        </div>
+    </div>
+
+    <!-- Thông tin đặt hàng -->
+    <div class="card mb-4">
+        <div class="card-header bg-info text-dark fw-bold">
+            <i class="bi bi-briefcase-fill"></i> Thông Tin Đặt Hàng
+        </div>
+        <div class="card-body">
+            <p>
+                <i class="bi bi-receipt"></i> <strong>Mã đơn:</strong> @Model.Id
+            </p>
+            <p>
+                <i class="bi bi-calendar-check"></i> <strong>Ngày đặt:</strong> @Model.OrderDate.ToString("dd/MM/yyyy")
+            </p>
+            <p>
+                <i class="bi bi-geo-alt-fill"></i> <strong>Địa chỉ giao hàng:</strong> @Model.ShippingAddress
+            </p>
+            <p>
+                <i class="bi bi-chat-text-fill"></i> <strong>Ghi chú của khách:</strong> @Model.Notes
+            </p>
+        </div>
+    </div>
+
+    <!-- Sản phẩm trong đơn hàng -->
+    <div class="card mb-4">
+        <div class="card-header bg-success text-white fw-bold">
+            <i class="bi bi-box-seam"></i> Sản Phẩm Trong Đơn Hàng
+        </div>
+        <div class="card-body p-0">
+            <table class="table table-bordered table-hover mb-0">
+                <thead class="table-success text-center">
+                    <tr>
+                        <th>Mã sản phẩm</th>
+                        <th>Tên sản phẩm</th>
+                        <th>Số lượng</th>
+                        <th>Giá</th>
+                        <th>Thành tiền</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var detail in Model.OrderDetails)
+                    {
+                        <tr class="text-center">
+                            <td>@detail.ProductId</td>
+                            <td>@detail.Product?.Name</td>
+                            <td>@detail.Quantity</td>
+                            <td>@detail.Price.ToString("C")</td>
+                            <td class="fw-bold text-success">@((detail.Price * detail.Quantity).ToString("C"))</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- Tổng tiền + nút -->
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <a asp-action="Index" class="btn btn-primary">
+            <i class="bi bi-arrow-left"></i> Quay lại danh sách
+        </a>
+        <h4 class="text-danger fw-bold">
+            <i class="bi bi-cash-coin"></i> Tổng tiền: @Model.TotalPrice.ToString("C")
+        </h4>
+    </div>
+</div>

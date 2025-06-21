@@ -48,6 +48,22 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQ2F0ZWdvcnlcVXBkYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/Dev/Learning/LapTrinhWeb_Hutech/ThucHanhLapTrinhWeb/TranTuanAnh_Buoi4/Areas/Admin/Views/Dashboard/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcRGFzaGJvYXJkXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Dev/Learning/LapTrinhWeb_Hutech/ThucHanhLapTrinhWeb/TranTuanAnh_Buoi4/Areas/Admin/Views/Order/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcT3JkZXJcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Dev/Learning/LapTrinhWeb_Hutech/ThucHanhLapTrinhWeb/TranTuanAnh_Buoi4/Areas/Admin/Views/Order/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcT3JkZXJcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Dev/Learning/LapTrinhWeb_Hutech/ThucHanhLapTrinhWeb/TranTuanAnh_Buoi4/Areas/Admin/Views/Order/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcT3JkZXJcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/Dev/Learning/LapTrinhWeb_Hutech/ThucHanhLapTrinhWeb/TranTuanAnh_Buoi4/Areas/Admin/Views/Product/Add.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUHJvZHVjdFxBZGQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
@@ -136,12 +152,20 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Dev/Learning/LapTrinhWeb_Hutech/ThucHanhLapTrinhWeb/TranTuanAnh_Buoi4/Views/Product/Display.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxEaXNwbGF5LmNzaHRtbA==
+[D:/Dev/Learning/LapTrinhWeb_Hutech/ThucHanhLapTrinhWeb/TranTuanAnh_Buoi4/Views/Order/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Dev/Learning/LapTrinhWeb_Hutech/ThucHanhLapTrinhWeb/TranTuanAnh_Buoi4/Views/Product/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxJbmRleC5jc2h0bWw=
+[D:/Dev/Learning/LapTrinhWeb_Hutech/ThucHanhLapTrinhWeb/TranTuanAnh_Buoi4/Views/Order/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Dev/Learning/LapTrinhWeb_Hutech/ThucHanhLapTrinhWeb/TranTuanAnh_Buoi4/Views/SanPham/Display.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2FuUGhhbVxEaXNwbGF5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Dev/Learning/LapTrinhWeb_Hutech/ThucHanhLapTrinhWeb/TranTuanAnh_Buoi4/Views/SanPham/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2FuUGhhbVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/Dev/Learning/LapTrinhWeb_Hutech/ThucHanhLapTrinhWeb/TranTuanAnh_Buoi4/Views/Shared/Error.cshtml]
@@ -154,6 +178,18 @@ build_metadata.AdditionalFiles.CssScope =
 
 [D:/Dev/Learning/LapTrinhWeb_Hutech/ThucHanhLapTrinhWeb/TranTuanAnh_Buoi4/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Dev/Learning/LapTrinhWeb_Hutech/ThucHanhLapTrinhWeb/TranTuanAnh_Buoi4/Views/ShoppingCart/Checkout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hvcHBpbmdDYXJ0XENoZWNrb3V0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Dev/Learning/LapTrinhWeb_Hutech/ThucHanhLapTrinhWeb/TranTuanAnh_Buoi4/Views/ShoppingCart/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hvcHBpbmdDYXJ0XEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Dev/Learning/LapTrinhWeb_Hutech/ThucHanhLapTrinhWeb/TranTuanAnh_Buoi4/Views/ShoppingCart/OrderCompleted.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hvcHBpbmdDYXJ0XE9yZGVyQ29tcGxldGVkLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/Dev/Learning/LapTrinhWeb_Hutech/ThucHanhLapTrinhWeb/TranTuanAnh_Buoi4/Views/_ViewImports.cshtml]

@@ -1,0 +1,57 @@
+﻿@model IEnumerable<TuanAnh_DonHang>
+
+@{
+    ViewData["Title"] = "Quản lý đơn đặt xe";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container mt-5">
+    <h2 class="fw-bold text-primary mb-4">📋 Quản Lý Đơn Đặt Xe</h2>
+
+    <table class="table table-bordered table-hover align-middle text-center">
+        <thead class="table-dark">
+            <tr>
+                <th>Mã đơn</th>
+                <th>Ngày đặt</th>
+                <th>Tổng tiền</th>
+                <th>Khách hàng</th>
+                <th>Email</th>
+                <th>Địa chỉ giao xe</th>
+                <th>Thao tác</th>
+            </tr>
+        </thead>
+        <tbody>
+            @if (Model != null && Model.Any())
+            {
+                foreach (var item in Model.OrderByDescending(o => o.OrderDate))
+                {
+                    <tr>
+                        <td class="fw-bold text-primary">#@item.Id</td>
+                        <td>@item.OrderDate.ToString("dd/MM/yyyy HH:mm")</td>
+                        <td class="text-success fw-bold">@item.TotalPrice.ToString("N0") đ</td>
+                        <td>@item.ApplicationUser?.FullName</td>
+                        <td>@item.ApplicationUser?.Email</td>
+                        <td>@item.ShippingAddress</td>
+                        <td>
+                            <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-outline-primary btn-sm">
+                                <i class="bi bi-pencil-square"></i> Sửa
+                            </a>
+                            <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-outline-info btn-sm mx-1">
+                                <i class="bi bi-eye"></i> Xem
+                            </a>
+                            
+                        </td>
+                    </tr>
+                }
+            }
+            else
+            {
+                <tr>
+                    <td colspan="7" class="text-center text-muted py-4">
+                        🚫 Không có đơn đặt xe nào trong hệ thống.
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

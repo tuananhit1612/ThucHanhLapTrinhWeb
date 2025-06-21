@@ -1,0 +1,31 @@
+﻿@model TuanAnh_Xe
+@{
+    ViewData["Title"] = "Xóa xe";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card shadow">
+                <div class="card-header bg-danger text-white">
+                    <h3 class="mb-0">Bạn có chắc chắn muốn xóa xe này?</h3>
+                </div>
+                <div class="card-body">
+                    <div class="mb-3">
+                        <h5>Tên xe: <span class="fw-normal">@Model.TenXe</span></h5>
+                        <h5>Giá: <span class="fw-normal">@String.Format("{0:N0} đ", Model.Gia)</span></h5>
+                        <h5>Ngày sản xuất: <span class="fw-normal">@Model.NgaySanXuat.ToString("dd/MM/yyyy")</span></h5>
+                        <h5>Hãng xe: <span class="fw-normal">@Model.HangXe?.TenHang</span></h5>
+                    </div>
+
+                    <form asp-action="DeleteConfirmed" method="post" class="d-flex gap-2">
+                        <input type="hidden" asp-for="XeID" />
+                        <input type="submit" value="Xóa" class="btn btn-danger" />
+                        <a asp-action="Index" class="btn btn-secondary">Hủy</a>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

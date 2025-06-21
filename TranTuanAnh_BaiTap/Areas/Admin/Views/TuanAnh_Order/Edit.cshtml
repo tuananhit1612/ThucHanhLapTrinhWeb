@@ -1,0 +1,63 @@
+﻿@model TuanAnh_DonHang
+
+@{
+    ViewData["Title"] = "Chỉnh sửa đơn đặt xe";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container mt-5">
+    <h2 class="fw-bold text-primary mb-4">✏️ Chỉnh sửa đơn đặt xe #@Model.Id</h2>
+
+    <form asp-action="Edit" method="post" class="needs-validation" novalidate>
+        @Html.AntiForgeryToken()
+        <input type="hidden" asp-for="Id" />
+
+        <div class="mb-3">
+            <label class="form-label fw-semibold">Khách hàng</label>
+            <input type="text" class="form-control" value="@Model.ApplicationUser?.FullName" readonly />
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label fw-semibold">Email</label>
+            <input type="email" class="form-control" value="@Model.ApplicationUser?.Email" readonly />
+        </div>
+
+        <div class="mb-3">
+            <label asp-for="ShippingAddress" class="form-label fw-semibold">Địa chỉ giao xe</label>
+            <input asp-for="ShippingAddress" class="form-control" required />
+            <div class="invalid-feedback">Vui lòng nhập địa chỉ giao xe.</div>
+        </div>
+
+        <div class="mb-3">
+            <label asp-for="Notes" class="form-label fw-semibold">Ghi chú</label>
+            <textarea asp-for="Notes" class="form-control" rows="4"></textarea>
+        </div>
+
+        <div class="d-flex justify-content-between align-items-center">
+            <a asp-action="Index" class="btn btn-secondary">
+                <i class="bi bi-arrow-left"></i> Quay lại
+            </a>
+            <button type="submit" class="btn btn-success">
+                <i class="bi bi-save"></i> Lưu thay đổi
+            </button>
+        </div>
+    </form>
+</div>
+
+<!-- Bootstrap validation script -->
+<script>
+    (function () {
+        'use strict';
+        var forms = document.querySelectorAll('.needs-validation');
+        Array.prototype.slice.call(forms)
+            .forEach(function (form) {
+                form.addEventListener('submit', function (event) {
+                    if (!form.checkValidity()) {
+                        event.preventDefault();
+                        event.stopPropagation();
+                    }
+                    form.classList.add('was-validated');
+                }, false);
+            });
+    })();
+</script>

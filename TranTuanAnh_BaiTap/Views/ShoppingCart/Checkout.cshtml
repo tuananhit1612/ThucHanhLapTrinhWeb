@@ -1,0 +1,44 @@
+﻿@model TuanAnh_DonHang
+
+<div class="container mt-5">
+    <h2 class="fw-bold text-primary mb-4 text-center">📦 Xác nhận thông tin đặt xe</h2>
+
+    <form asp-action="Checkout" method="post" class="needs-validation" novalidate>
+        <div class="mb-3">
+            <label asp-for="ShippingAddress" class="form-label fw-semibold">Địa chỉ giao xe</label>
+            <input asp-for="ShippingAddress" class="form-control" placeholder="Nhập địa chỉ nhận xe..." required />
+            <div class="invalid-feedback">
+                Vui lòng nhập địa chỉ giao xe.
+            </div>
+        </div>
+
+        <div class="mb-3">
+            <label asp-for="Notes" class="form-label fw-semibold">Ghi chú (tuỳ chọn)</label>
+            <textarea asp-for="Notes" class="form-control" rows="4" placeholder="Ví dụ: Giao trong giờ hành chính, kiểm tra giấy tờ..."></textarea>
+        </div>
+
+        <div class="text-end">
+            <button type="submit" class="btn btn-success btn-lg rounded-pill px-4">
+                <i class="bi bi-bag-check"></i> Hoàn tất đặt xe
+            </button>
+        </div>
+    </form>
+</div>
+
+<!-- Optional: Bootstrap 5 validation script -->
+<script>
+    (function () {
+        'use strict'
+        var forms = document.querySelectorAll('.needs-validation');
+        Array.prototype.slice.call(forms)
+            .forEach(function (form) {
+                form.addEventListener('submit', function (event) {
+                    if (!form.checkValidity()) {
+                        event.preventDefault()
+                        event.stopPropagation()
+                    }
+                    form.classList.add('was-validated');
+                }, false);
+            });
+    })();
+</script>
